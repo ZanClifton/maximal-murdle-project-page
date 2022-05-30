@@ -1,9 +1,11 @@
 import "../styles/App.css";
+import { Video } from "./Video";
 
 export const Overview = () => {
   return (
     <div className="Overview-container">
       <header className="App-header">Project Overview</header>
+      <Video />
       <p className="Overview-para">
         Maximal() formed during the May 2022 graduating cohort of the{" "}
         <a
