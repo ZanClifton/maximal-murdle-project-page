@@ -1,7 +1,7 @@
 * {
-  font-family: 'Karla', serif;
+  font-family: "Karla", serif;
   background-color: #282c34;
-  color: white
+  color: white;
 }
 
 .App {
@@ -9,7 +9,7 @@
 }
 
 .App-logo {
-  width: 50%
+  width: 50%;
 }
 
 .App-header {
@@ -20,7 +20,7 @@
   flex-direction: column;
   align-items: center;
   margin: 1%;
-  font-size: xx-large; 
+  font-size: xx-large;
 }
 
 .App-link {
@@ -101,9 +101,63 @@
   text-align: center;
 }
 
+.Maximal-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+  overflow: hidden;
+  margin: 0;
+}
+
+.Maximal-container {
+  display: flex;
+  width: 90vw;
+}
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 50px;
+  color: black;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel h3 {
+  background-color: transparent;
+  color: #fff;
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
 @media only screen and (min-width: 600px) {
   .video-size {
     width: 560px;
     height: 315px;
-  } 
+  }
+
+  .Maximal-container {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+  }
 }
