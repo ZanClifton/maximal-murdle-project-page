@@ -56,8 +56,6 @@
 }
 
 .Nav-container {
-  width: 90%;
-  border: 2px solid red;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -66,8 +64,23 @@
 }
 
 .Nav-item {
+  border: 1px solid grey;
+  padding: 3px 5px;
+  box-shadow: 2px 3px 3px rgb(65, 65, 65);
+  color: rgb(158, 158, 158);
+  text-decoration: none;
   list-style: none;
   font-size: medium;
+}
+
+.Nav-item:hover {
+  border: 1px solid grey;
+  color: rgb(158, 158, 158);
+  background-color: #353b45;
+}
+
+.Nav-item:focus {
+  box-shadow: inset 2px 3px 1px rgb(65, 65, 65);
 }
 
 .Tech-badges {

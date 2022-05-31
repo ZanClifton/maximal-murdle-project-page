@@ -7,6 +7,9 @@ export const Nav = () => {
       <Link to="/tech" className="Nav-item">
         Tech Stack
       </Link>
+      <Link to="/" className="Nav-item">
+        Home
+      </Link>
       <Link to="/maximal" className="Nav-item">
         Maximal()
       </Link>
