@@ -1,12 +1,13 @@
 import Logo from "./Logo";
-import Nav from "./Nav";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <Logo />
-        <Nav />
+        <Link to="/">
+          <Logo />
+        </Link>
       </header>
     </div>
   );
