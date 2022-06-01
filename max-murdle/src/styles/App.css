@@ -5,7 +5,14 @@
 }
 
 .App {
+  margin: 0px;
+  padding: 0px;
+  padding-right: 2%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
 }
 
 .App-logo {
@@ -46,25 +53,35 @@
   width: 200px;
 }
 
+.Maximal-container,
 .Overview-container,
 .Tech-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2%;
+  margin: 10px;
 }
 
 .Nav-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  margin: 10px;
+  justify-content: center;
   align-items: center;
-  margin: 2%;
 }
 
+.Maximal-nav {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  align-items: center;
+}
+
+.Maximal-button,
 .Nav-item {
   border: 1px solid grey;
+  margin: 5px;
   padding: 3px 5px;
   box-shadow: 2px 3px 3px rgb(65, 65, 65);
   color: rgb(158, 158, 158);
@@ -73,12 +90,14 @@
   font-size: medium;
 }
 
+.Maximal-button,
 .Nav-item:hover {
   border: 1px solid grey;
   color: rgb(158, 158, 158);
   background-color: #353b45;
 }
 
+.Maximal-button,
 .Nav-item:focus {
   box-shadow: inset 2px 3px 1px rgb(65, 65, 65);
 }
@@ -98,55 +117,38 @@
 .Tech-para {
   margin: 6px;
   font-size: medium;
-  text-align: center;
+  text-align: justify;
 }
 
-.Maximal-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* height: 100vh; */
-  overflow: hidden;
-  margin: 0;
-}
-
-.Maximal-container {
-  display: flex;
-  width: 90vw;
-}
-
-.panel {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 300px;
+.photo {
+  height: 250px;
   border-radius: 50px;
   color: black;
   cursor: pointer;
-  flex: 0.5;
   margin: 10px;
   position: relative;
   transition: flex 0.7s ease-in;
 }
 
-.panel.active {
-  flex: 5;
+.bio-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 90vw;
+  align-items: center;
+  justify-content: center;
 }
 
-.panel h3 {
-  background-color: transparent;
+.bio-h3 {
+  margin: 8px;
   color: #fff;
   font-size: 24px;
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  margin: 0;
-  opacity: 0;
+
+  align-items: center;
+  justify-content: center;
 }
 
-.panel.active h3 {
-  opacity: 1;
-  transition: opacity 0.3s ease-in 0.4s;
+.bio-para {
+  text-align: justify;
 }
 
 @media only screen and (min-width: 600px) {
@@ -155,9 +157,9 @@
     height: 315px;
   }
 
-  .Maximal-container {
-    display: flex;
-    flex-direction: row;
-    width: 90vw;
+  .Maximal-container,
+  .Overview-container,
+  .Tech-container {
+    max-width: 800px;
   }
 }

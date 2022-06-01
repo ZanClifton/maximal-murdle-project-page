@@ -1,46 +1,27 @@
 import "../styles/App.css";
-import diana from "../images/Diana.jpeg";
-import gareth from "../images/Gareth.jpg";
-import tomasz from "../images/Tomasz.jpeg";
-import yuri from "../images/Yuri.png";
-import zan from "../images/Zan.jpg";
+import { Team } from "./Team";
 
 export const Maximal = () => {
   return (
     <>
-      <div className="Maximal-body">
-        <div className="Maximal-container">
-          <div
-            className="panel active"
-            style={{ backgroundImage: `url(${diana})` }}
+      <div className="Maximal-container">
+        <Team />
+        <p className="bio-para">
+          Maximal() are a team comprising Diana Vozanu, Gareth Williams, Tomasz
+          Pikniczka, Yuri Sorokins and Zan Clifton. They met during the{" "}
+          <a
+            className="App-link"
+            href="https://northcoders.com/our-courses/remote-coding-bootcamp"
           >
-            <h3>Diana Vozanu</h3>
-          </div>
-          <div
-            className="panel active"
-            style={{ backgroundImage: `url(${gareth})` }}
-          >
-            <h3>Gareth Williams</h3>
-          </div>
-          <div
-            className="panel active"
-            style={{ backgroundImage: `url(${tomasz})` }}
-          >
-            <h3>Tomasz Pikniczka</h3>
-          </div>
-          <div
-            className="panel active"
-            style={{ backgroundImage: `url(${yuri})` }}
-          >
-            <h3>Yuri Sorokins</h3>
-          </div>
-          <div
-            className="panel active"
-            style={{ backgroundImage: `url(${zan})` }}
-          >
-            <h3>Zan Clifton</h3>
-          </div>
-        </div>
+            Northcoders Coding Bootcamp
+          </a>{" "}
+          and worked together on Murdle for their final project.
+        </p>
+        <p className="bio-para">
+          Intensely proud of their creation, they have hosted the app on the
+          Google Play Store and are continuing to make improvements to it to
+          create a fun and competitive game experience.
+        </p>
       </div>
     </>
   );
