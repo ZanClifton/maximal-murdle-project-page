@@ -183,8 +183,6 @@ const data = [
         </p>
       </>
     ),
-    // linkedIn: "https://www.linkedin.com/in/zan-clifton/",
-    // gitHub: "https://github.com/ZanClifton",
   },
 ];
 
