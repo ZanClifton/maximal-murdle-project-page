@@ -1,15 +1,22 @@
 * {
-  font-family: 'Karla', serif;
+  font-family: "Karla", serif;
   background-color: #282c34;
-  color: white
+  color: white;
 }
 
 .App {
+  margin: 0px;
+  padding: 0px;
+  padding-right: 2%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
 }
 
 .App-logo {
-  width: 50%
+  width: 50%;
 }
 
 .App-header {
@@ -20,7 +27,7 @@
   flex-direction: column;
   align-items: center;
   margin: 1%;
-  font-size: xx-large; 
+  font-size: xx-large;
 }
 
 .App-link {
@@ -46,25 +53,35 @@
   width: 200px;
 }
 
+.Maximal-container,
 .Overview-container,
 .Tech-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2%;
+  margin: 10px;
 }
 
 .Nav-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  margin: 10px;
+  justify-content: center;
   align-items: center;
-  margin: 2%;
 }
 
+.Maximal-nav {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  align-items: center;
+}
+
+.Maximal-button,
 .Nav-item {
   border: 1px solid grey;
+  margin: 5px;
   padding: 3px 5px;
   box-shadow: 2px 3px 3px rgb(65, 65, 65);
   color: rgb(158, 158, 158);
@@ -73,12 +90,14 @@
   font-size: medium;
 }
 
+.Maximal-button,
 .Nav-item:hover {
   border: 1px solid grey;
   color: rgb(158, 158, 158);
   background-color: #353b45;
 }
 
+.Maximal-button,
 .Nav-item:focus {
   box-shadow: inset 2px 3px 1px rgb(65, 65, 65);
 }
@@ -98,12 +117,53 @@
 .Tech-para {
   margin: 6px;
   font-size: medium;
-  text-align: center;
+  text-align: justify;
+}
+
+.photo {
+  height: 250px;
+  border-radius: 50px;
+  color: black;
+  cursor: pointer;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+
+.bio-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 90vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.bio-h3 {
+  margin: 8px;
+  color: #fff;
+  font-size: 24px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.bio-para {
+  text-align: justify;
 }
 
 @media only screen and (min-width: 600px) {
+  .App-logo {
+    max-width: 700px;
+  }
+
   .video-size {
     width: 560px;
     height: 315px;
-  } 
+  }
+
+  .Maximal-container,
+  .Overview-container,
+  .Tech-container {
+    max-width: 800px;
+  }
 }
