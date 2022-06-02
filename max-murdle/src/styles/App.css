@@ -95,11 +95,12 @@
   font-size: medium;
 }
 
-.Maximal-button,
+.Maximal-button:hover,
 .Nav-item:hover {
   border: 1px solid grey;
   color: rgb(158, 158, 158);
   background-color: #353b45;
+  cursor: pointer;
 }
 
 .Maximal-button,
