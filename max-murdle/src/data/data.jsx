@@ -3,6 +3,7 @@ import gareth from "../images/Gareth.jpg";
 import tomasz from "../images/Tomasz.jpeg";
 import yuri from "../images/Yuri.png";
 import zan from "../images/Zan.jpg";
+import code from "../images/code.jpg";
 
 const data = [
   {
@@ -26,7 +27,7 @@ const data = [
           Diana worked with designers and programmers who inspired her interest
           in web development.
         </p>
-        <p className="bio-par a">
+        <p className="bio-para">
           She undertook the{" "}
           <a
             className="App-link"
@@ -80,7 +81,7 @@ const data = [
           but also learning all sorts of software, so why not try a real job in
           the industry?
         </p>
-        <p className="bio-par a">
+        <p className="bio-para">
           As he was learning HTML, CSS, JavaScript on his own, and then more
           advanced topics with{" "}
           <a className="App-link" href="https://northcoders.com/">
@@ -118,7 +119,7 @@ const data = [
           him to combine his interest in technology with his passion to solve
           logic problems.
         </p>
-        <p className="bio-par a">
+        <p className="bio-para">
           He loves sport, reading and finances and is excited to start a career
           as a full stack software developer.
         </p>
@@ -146,7 +147,7 @@ const data = [
           and effective design in software development, and this largely
           influenced her decision to become a developer.
         </p>
-        <p className="bio-par a">
+        <p className="bio-para">
           As well as politics, permaculture, education and the environment, Zan
           is passionate about music and plays the trumpet, piano, steel drums,
           and the ukulele. She loves the Dungeons & Dragons tabletop RPGs, and
@@ -157,6 +158,33 @@ const data = [
     ),
     linkedIn: "https://www.linkedin.com/in/zan-clifton/",
     gitHub: "https://github.com/ZanClifton",
+  },
+  {
+    id: "Maximal",
+    image: code,
+    name: "About Maximal()",
+    bio: (
+      <>
+        <p className="bio-para">
+          Maximal() are a team comprising Diana Vozanu, Gareth Williams, Tomasz
+          Pikniczka, Yuri Sorokins and Zan Clifton. They met during the{" "}
+          <a
+            className="App-link"
+            href="https://northcoders.com/our-courses/remote-coding-bootcamp"
+          >
+            Northcoders Coding Bootcamp
+          </a>{" "}
+          and worked together on Murdle for their final project.
+        </p>
+        <p className="bio-para">
+          Intensely proud of their creation, they have hosted the app on the
+          Google Play Store and are continuing to make improvements to it to
+          create a fun and competitive game experience.
+        </p>
+      </>
+    ),
+    // linkedIn: "https://www.linkedin.com/in/zan-clifton/",
+    // gitHub: "https://github.com/ZanClifton",
   },
 ];
 
