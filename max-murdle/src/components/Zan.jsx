@@ -12,7 +12,7 @@ export const Zan = () => {
         <h3 className="bio-h3">Zan Clifton</h3>
         <p className="bio-para">
           Formerly an adult skills teacher and permaculture designer, Zan is
-          also the Chair of the{" "}
+          also the National Chair of the{" "}
           <a className="App-link" href="https://www.freethenorth.co.uk/">
             Northern Independence Party
           </a>
