@@ -15,9 +15,35 @@ This website was created to showcase [Maximal(Murdle)](https://github.com/ZanCli
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ZanClifton/maximal-murdle)
 
 #
+## Run Locally
+
+### ✔️ 1. CLONE THE REPO
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+
+Terminal Commands:
+```
+$ git clone https://github.com/ZanClifton/maximal-murdle-project-page.git
+$ cd maximal-murdle-project-page
+$ code .
+```
+
+### ✔️ 2. INSTALL DEPENDENCIES
+![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
+```
+$ npm install
+```
+### ✔️ 3. USAGE
+![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
+
+Start the local site running with:
+```
+$ npm start
+```
+Your default browser will be used to display the page.
+
+#
 <div align=right>
   <h6>With thanks to:
     <br>ReadMe Typing SVG: <a href="https://git.io/typing-svg">DenverCoder1</a>
     <br>Markdown Badges: <a href="https://github.com/Ileriayo/markdown-badges">Ileriayo</a></h6>
-
 </div>
